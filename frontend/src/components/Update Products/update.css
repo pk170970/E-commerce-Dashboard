@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+.container-product{
+  background-color: rgba(255, 255, 255);
+  padding: 10px 40px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  color: black;
+  width: 100%;
+  max-width: 100vw;
+  margin: 2em auto;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.myBtn {
+  cursor: pointer;
+  display: inline-block;
+  width: 20%;
+  background: grey;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  color:white;
+  font-weight: bolder;
+}
+
+.myBtn:hover{
+  color: white;
+  background-color: green;
+  /* transform: scale(1.1); */
+}
+
+.myBtn:focus {
+  outline: 0;
+}
+
+.myBtn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.add-form{
+  position: relative;
+  margin: 20px 0 40px;
+  width: 50vw;
+}
+
+ .add-input {
+  background-color: white;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius:8px;
+}
+

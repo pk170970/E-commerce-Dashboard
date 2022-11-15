@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.container-signin {
+  background-color: rgba(11, 1, 1, 0.6);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 3em auto;
+  gap:1.2em;
+  color: white;
+  padding:1em;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.signin-btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  font-family: inherit;
+  border: 0;
+  border-radius: 5px;
+  padding:0.5em 1em;
+}
+
+.signin-btn:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgb(96, 253, 28);
+  font-weight: bolder;
+  box-shadow: 0px 0px 10px grey;
+  /* transform: scale(1.1); */
+}
+
+.signin-btn:focus {
+  outline: 0;
+}
+
+.signin-btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control-signin {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control-signin > input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  color: white ;
+  outline:0;
+}
+
+

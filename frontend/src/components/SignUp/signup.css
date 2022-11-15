@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+
+.container-big{
+  background-color: rgba(11, 1, 1, 0.6);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 1.5em;
+  padding: 1em 0.5em;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width:50%;
+}
+
+
+
+.form-control input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px #fff solid;
+  color: black;
+  width:100%;
+  padding:0.4em 0.5em;
+}
+
+
+.signup-btn {
+  cursor: pointer;
+  background:transparent;
+  font-family: inherit;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bolder;
+  width:100%;
+  padding:0.5em 0;
+  color:white;
+  box-shadow: 0px 0px 5px white;
+}
+
+.signup-btn:hover{
+  color: white;
+  background-color: rgba(0, 0, 0);
+  /* transform: scale(1.1); */
+}
+
+.signup-btn:focus {
+  outline: 0;
+}
+
+.signup-btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
+}
+

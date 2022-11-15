@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+:root{
+    --half-spacing-unit: --base-spacing-unit / 2;
+    --base-spacing-unit: 24px;
+    --color-form-highlight: #EEEEEE;
+    --color-alpha: #1772FF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:1em;
+}
+
+.list-heading{
+	font-size: 2rem;
+	color: white;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+.top>input{
+	padding: 0.5em;
+	border: none;
+	outline:none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px black;
+	width:15%;
+	font-size: 1rem;
+}
+
+.table {
+	width:100%;
+	border:1px solid --color-form-highlight;
+    background-color: WHITE;
+	font-size: 1.3rem;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#000;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+    border-bottom: 2px solid;
+}
+
+.header__item {
+	text-transform:uppercase;
+}
+
+.filter__link {
+	color:white;
+	text-decoration: none;
+	position:relative;
+	display:inline-block;
+	padding-left:--base-spacing-unit;
+	padding-right:--base-spacing-unit;
+}
+
+.table-row:hover{
+	background-color: rgb(201, 43, 15);
+	color:white
+}
+
+
+.delete-data{
+	width: 45%;
+	margin: 0 auto;
+	border-radius: 7px;
+	background-color: tomato;
+	color: white;
+	padding: 0.1em;
+	margin-bottom: 0;
+}
+
+.delete-data:hover, .delete-data a:hover{
+	background-color: rgb(234, 234, 93);
+	color:black;
+	border:none;
+	cursor:pointer;
+}
+
+.delete-data a{
+	text-decoration: none;
+	color:white;
+}
+
+.notfound-heading{
+	font-size: 4rem;
+	text-align: center;
+	padding:3em;
+}
