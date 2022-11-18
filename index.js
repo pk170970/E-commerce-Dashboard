@@ -13,10 +13,10 @@ app.use(cors());
 
 
 if(process.env.NODE_ENV){
-    app.use(express.static(path.join(__dirname, '../frontend/build')));
+    app.use(express.static(path.join(__dirname, './frontend/build')));
     app.use("/api",route);
     app.get('*',(req,res)=>{
-        res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+        res.sendFile(path.join(__dirname, './frontend/build/index.html'));
     })
 }else{
 }
