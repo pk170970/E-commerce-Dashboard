@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import "./signup.css";
 
 const SignUp = () => {
-
+  const API_URL= process.env.REACT_APP_URL;
   const navigate = useNavigate();
 
   // useEffect(() => {

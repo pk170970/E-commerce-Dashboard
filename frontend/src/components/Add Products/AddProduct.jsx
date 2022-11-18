@@ -4,6 +4,7 @@ import {toast,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const AddProduct = () => {
+    const API_URL= process.env.REACT_APP_URL;
     const [product,setProduct]= useState({
         product_name:"",
         product_price:"",

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import './profile.css';
 
 const Profile = () => {
-
+  
   const [profile, setProfile] = useState({
     email: "",
     firstName: "",

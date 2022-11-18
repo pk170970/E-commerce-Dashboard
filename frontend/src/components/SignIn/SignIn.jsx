@@ -7,6 +7,7 @@ import "./signin.css";
 
 const SignIn = () => {
     const navigate = useNavigate();
+    const API_URL= process.env.REACT_APP_URL;
 
     useEffect(() => {
         const auth = localStorage.getItem("user");
