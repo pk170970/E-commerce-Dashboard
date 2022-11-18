@@ -9,6 +9,7 @@ import AddProduct from './components/Add Products/AddProduct';
 import ProductsList from './components/Show Products/ProductsList';
 import UpdateProducts from  './components/Update Products/UpdateProducts';
 import Profile from "./components/Profile/Profile";
+require('dotenv').config();
 
 function App() {
   return (

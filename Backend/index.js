@@ -1,14 +1,22 @@
+require('dotenv').config();
+require('./database/config');
+const PORT = process.env.PORT || 5000;
+const jwtKey= process.env.JWTKEY;
+
 const express = require('express');
 const app = express();
 const cors = require('cors');
-require('./database/config');
 const User = require('./model/User');
 const Product = require('./model/Product');
-const PORT = 5000;
+const jwt = require('jsonwebtoken');
+const path= require('path');
+
+// Middle ware
 app.use(express.json());
 app.use(cors());
-const jwt = require('jsonwebtoken');
-const jwtKey = 'secret'
+
+
+app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // cors issue: when we create api on backend and send request, request got block as due to security reasons in browser, we get cors error. browsser thinks that request from frontend and backend are different and throws cors error.
 
@@ -156,7 +164,7 @@ function verifyToken(req,res,next){
 }
 
 
-
 app.listen(PORT, () => {
     console.log("Server is running at PORT 5000");
 });
+

@@ -13,7 +13,7 @@ const Products = () => {
   }, [])
 
   async function getProductList() {
-    const response = await fetch('http://localhost:5000/products',{
+    const response = await fetch(`${API_URL}/products`,{
       headers:{
         authorization:`bearer ${JSON.parse(localStorage.getItem('auth'))}` // this auth has been set in signin.jsx page
       }
@@ -27,7 +27,7 @@ const Products = () => {
   }
   // console.log(product);
   async function handleClick(id) {
-    const response = await fetch(`http://localhost:5000/products/${id}`, {
+    const response = await fetch(`${API_URL}/products/${id}`, {
       method: 'delete',
       headers:{
         authorization:`bearer ${JSON.parse(localStorage.getItem('auth'))}`
@@ -42,7 +42,7 @@ const Products = () => {
    
       let key = e.target.value;
       if (key !== "") {
-        let response = await fetch(`http://localhost:5000/search/${key}`,{
+        let response = await fetch(`${API_URL}/search/${key}`,{
           headers:{
             authorization:`bearer ${JSON.parse(localStorage.getItem('auth'))}`
           }

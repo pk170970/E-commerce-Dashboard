@@ -22,7 +22,7 @@ const UpdateProducts = () => {
 
     async function findData() {
         // console.log(params);
-        const response = await fetch(`http://localhost:5000/products/${params.id}`, {
+        const response = await fetch(`${API_URL}/${params.id}`, {
             headers: {
                 authorization: `bearer ${JSON.parse(localStorage.getItem('auth'))}`
             }
@@ -42,7 +42,7 @@ const UpdateProducts = () => {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/products/${params.id}`, {
+            const response = await fetch(`${API_URL}/products/${params.id}`, {
                 method: 'put',
                 body: JSON.stringify(update),
                 headers: {
