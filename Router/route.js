@@ -1,5 +1,4 @@
 require('../database/config');
-const PORT = process.env.PORT ;
 const jwtKey= process.env.JWTKEY;
 const express = require('express');
 const User = require('../model/User');
