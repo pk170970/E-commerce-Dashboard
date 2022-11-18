@@ -36,7 +36,7 @@ const SignIn = () => {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const result = await fetch(`${API_URL}//login`, {
+            const result = await fetch(`${API_URL}/api/login`, {
                 method: 'post',
                 body: JSON.stringify(userData),
                 headers: {

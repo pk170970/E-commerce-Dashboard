@@ -40,7 +40,7 @@ const SignUp = () => {
       e.preventDefault();
       if ((userData.password === userData.cpassword) && userData.email.includes("@")) {
 
-        const result = await fetch(`${API_URL}/register`, {
+        const result = await fetch(`${API_URL}/api/register`, {
           method: "post",
           body: JSON.stringify(userData),
           headers: {

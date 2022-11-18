@@ -18,7 +18,7 @@ const AddProduct = () => {
      async function handleSubmit(e){
         e.preventDefault();
         try {
-            const result= await fetch(`${API_URL}/add-product`,{
+            const result= await fetch(`${API_URL}/api/add-product`,{
             method:'post',
             body:JSON.stringify(product),
             headers:{

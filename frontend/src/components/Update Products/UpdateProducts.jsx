@@ -23,7 +23,7 @@ const UpdateProducts = () => {
 
     async function findData() {
         // console.log(params);
-        const response = await fetch(`${API_URL}/${params.id}`, {
+        const response = await fetch(`${API_URL}/api/products/${params.id}`, {
             headers: {
                 authorization: `bearer ${JSON.parse(localStorage.getItem('auth'))}`
             }
@@ -43,7 +43,7 @@ const UpdateProducts = () => {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            const response = await fetch(`${API_URL}/products/${params.id}`, {
+            const response = await fetch(`${API_URL}/api/products/${params.id}`, {
                 method: 'put',
                 body: JSON.stringify(update),
                 headers: {
