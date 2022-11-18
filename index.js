@@ -17,7 +17,8 @@ if(process.env.NODE_ENV){
     app.use("/api",route);
     app.get('*',(req,res)=>{
         res.sendFile(path.join(__dirname, './frontend/build/index.html'));
-    })
+    });
+    console.log(path.join(__dirname, './frontend/build'));
 }else{
 }
 // cors issue: when we create api on backend and send request, request got block as due to security reasons in browser, we get cors error. browsser thinks that request from frontend and backend are different and throws cors error.
