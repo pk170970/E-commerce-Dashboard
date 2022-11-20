@@ -37,7 +37,7 @@ const AddProduct = () => {
        })
         
         } catch (error) {
-            toast.warning("Please enter all the details correctly");
+            toast.error("Please enter all the details correctly");
         }
         // console.log(product);
     }

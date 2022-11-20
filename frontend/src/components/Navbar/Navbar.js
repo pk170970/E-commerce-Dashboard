@@ -9,7 +9,7 @@ const Navbar = () => {
         localStorage.clear();
         navigate('/signup');
     }
-    console.log(JSON.parse(auth));
+    // console.log(JSON.parse(auth));
     return (
         <div className='flex'>
             { auth ?  

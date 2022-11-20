@@ -60,8 +60,8 @@ const SignIn = () => {
             }
 
         } catch (error) {
-            console.log(error);
-            toast.error("Please Enter the correct details")
+            // console.log(error.response.data.message);
+            toast.error("Please Enter the correct details");
         }
     }
 
