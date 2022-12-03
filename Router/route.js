@@ -80,7 +80,7 @@ route.post('/login', async (req, res) => {
 });
 
 // add products
-route.post('/add-product', verifyToken, verifyToken, async (req, res) => {
+route.post('/add-product', verifyToken , async (req, res) => {
     const product = new Product(req.body);
     const product_data = await product.save();
     res.send(product_data);
