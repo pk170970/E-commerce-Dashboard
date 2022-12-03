@@ -39,3 +39,5 @@ In private component, if user is registered then we can't go to signup , he has 
 5. test flow
 
 
+![](signin.JPG)
+![](signup.JPG)
