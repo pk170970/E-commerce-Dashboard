@@ -1,5 +1,5 @@
 require('../database/config');
-const jwtKey = process.env.JWTKEY;
+const jwtKey = process.env.JWTKEY; // CREATING TOKENS FOR AUTHENTICATION
 const express = require('express');
 const User = require('../model/User');
 const Product = require('../model/Product');
@@ -16,6 +16,7 @@ route.post('/register', async (req, res) => {
 
     try {
         const existingUser = await User.findOne({ email });
+        console.log(existingUser);
         if (existingUser) {
             // console.log(existingUser);
             return res.status(400).json({
@@ -28,6 +29,7 @@ route.post('/register', async (req, res) => {
         const userData = new User({ firstName, lastName, email, password });
         //you can use bcrypt to encrypt the password
         let user = await userData.save();
+        console.log(user);
         jwt.sign({ user }, jwtKey, { expiresIn: "2h" }, (error, token) => {
             if (!error) {
                 user.password = undefined;
